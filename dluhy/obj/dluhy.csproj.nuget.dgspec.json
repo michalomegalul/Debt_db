@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dog56\\source\\repos\\dluhy\\dluhy\\dluhy.csproj": {}
+    "C:\\Users\\dog56\\source\\SSPS\\Debt_db\\dluhy\\dluhy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dog56\\source\\repos\\dluhy\\dluhy\\dluhy.csproj": {
+    "C:\\Users\\dog56\\source\\SSPS\\Debt_db\\dluhy\\dluhy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dog56\\source\\repos\\dluhy\\dluhy\\dluhy.csproj",
+        "projectUniqueName": "C:\\Users\\dog56\\source\\SSPS\\Debt_db\\dluhy\\dluhy.csproj",
         "projectName": "dluhy",
-        "projectPath": "C:\\Users\\dog56\\source\\repos\\dluhy\\dluhy\\dluhy.csproj",
+        "projectPath": "C:\\Users\\dog56\\source\\SSPS\\Debt_db\\dluhy\\dluhy.csproj",
         "packagesPath": "C:\\Users\\dog56\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dog56\\source\\repos\\dluhy\\dluhy\\obj\\",
+        "outputPath": "C:\\Users\\dog56\\source\\SSPS\\Debt_db\\dluhy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,8 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.emzi0767.com/api/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -45,6 +45,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.17.0, )"
@@ -69,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
