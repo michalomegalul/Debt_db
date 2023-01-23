@@ -8,36 +8,25 @@ namespace dluhy.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
+        private readonly ApplicationDbContext _context;
+        public IndexModel(ILogger<IndexModel> logger, ApplicationDbContext context)
         {
             _logger = logger;
-            
+            _context = context;
+
         }
         
-        
+
+
         public void OnGet()
         {
         }
         public void OnPost()
         {
             string userinput = Request.Form["userinput"];
-            var x = 0;
-            string userinputvalid = Convert.ToString(userinput);
-            if (userinputvalid != null)
-            {
-                x++;
-                using (var db = new ApplicationDbContext())
-                {
-                    var input = new ApplicationDbContext.Input() { input = userinput, Id = 1 };
-                    db.Add(input);
-                    db.SaveChanges();
-                }
-            }
-            else
-            {
-
-            }
+            var input = new ApplicationDbContext.Input {Id = 1, input= userinput };
+            _context.input.Add(input);
+            _context.SaveChanges();
             
 
 
